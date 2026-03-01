@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Путешествуй Легко — Туристическое агентство</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav container">
+        <a class="logo" href="#top">Путешествуй Легко</a>
+        <div class="nav-links">
+          <a href="#tours">Туры</a>
+          <a href="#about">О нас</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contact">Контакты</a>
+        </div>
+      </nav>
+
+      <div class="hero-content container">
+        <p class="kicker">Туристическое агентство</p>
+        <h1>Яркие путешествия по миру без лишних хлопот</h1>
+        <p>
+          Подберем тур под ваш бюджет и стиль отдыха: пляж, экскурсии, горы,
+          романтические поездки и семейные каникулы.
+        </p>
+        <a class="btn" href="#contact">Подобрать тур</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="tours">
+        <h2>Популярные направления</h2>
+        <div class="cards">
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80"
+              alt="Пляж на Мальдивах"
+            />
+            <div class="card-body">
+              <h3>Мальдивы</h3>
+              <p>7 ночей в отеле 4★ с завтраками и трансфером.</p>
+              <span>от 145 000 ₽</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1200&q=80"
+              alt="Венеция, Италия"
+            />
+            <div class="card-body">
+              <h3>Италия</h3>
+              <p>Культурный тур по Риму, Флоренции и Венеции.</p>
+              <span>от 98 000 ₽</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+              alt="Пляж в Таиланде"
+            />
+            <div class="card-body">
+              <h3>Таиланд</h3>
+              <p>Отдых на Пхукете + островные экскурсии.</p>
+              <span>от 79 000 ₽</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="about">
+        <div class="container about">
+          <div>
+            <h2>Почему выбирают нас</h2>
+            <ul>
+              <li>Более 10 лет опыта в организации отдыха.</li>
+              <li>Работаем только с проверенными туроператорами.</li>
+              <li>Поддержка 24/7 до и во время путешествия.</li>
+              <li>Помощь с визами, страховками и документами.</li>
+            </ul>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
+            alt="Путешественник с картой"
+          />
+        </div>
+      </section>
+
+      <section class="section container" id="reviews">
+        <h2>Отзывы клиентов</h2>
+        <div class="reviews">
+          <blockquote>
+            “Поехали в Турцию с двумя детьми — всё прошло идеально. Быстро,
+            понятно и без стресса!”
+            <cite>— Анна и Сергей</cite>
+          </blockquote>
+          <blockquote>
+            “Медовый месяц в Италии организовали на высшем уровне. Отели и
+            экскурсии просто супер!”
+            <cite>— Ольга</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="container contact">
+          <div>
+            <h2>Оставьте заявку</h2>
+            <p>
+              Напишите, куда хотите отправиться, и мы предложим несколько
+              вариантов уже сегодня.
+            </p>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <label>
+              Имя
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Телефон
+              <input type="tel" name="phone" required />
+            </label>
+            <label>
+              Желаемое направление
+              <input type="text" name="destination" required />
+            </label>
+            <button type="submit" class="btn">Отправить заявку</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Путешествуй Легко. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
